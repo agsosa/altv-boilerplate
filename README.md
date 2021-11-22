@@ -1,3 +1,2 @@
 # altv-boilerplate
-
-TS altv server boilerplate
+altv.mp TypeScript server/client boilerplate
