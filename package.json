@@ -1,0 +1,33 @@
+{
+  "name": "altv-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "",
+  "type": "module",
+  "scripts": {
+    "clean": "rimraf ./resources",
+    "build": "npm run clean && swc ./src -d ./resources --copy-files",
+    "update": "altv-pkg d release",
+    "windows": "npm run build && altv-server.exe",
+    "linux": "npm run build && ./start.sh",
+    "windev": "nodemon --watch \"./src/**\" --ext \"ts\" --exec \"npm run build && altv-server.exe\"",
+    "dev": "npm run windev"
+  },
+  "author": "Alejandro Sosa",
+  "license": "ISC",
+  "devDependencies": {
+    "@altv/types-client": "^1.9.4",
+    "@altv/types-natives": "^1.4.3",
+    "@altv/types-server": "^2.1.1",
+    "@altv/types-shared": "^1.1.0",
+    "@altv/types-webview": "^1.0.2",
+    "@swc/cli": "^0.1.46",
+    "@swc/core": "^1.2.60",
+    "@types/node": "^14.6.1",
+    "altv-pkg": "^1.2.0",
+    "nodemon": "^2.0.7",
+    "rimraf": "^3.0.2",
+    "tsup": "^4.11.2",
+    "typescript": "latest"
+  }
+}
