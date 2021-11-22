@@ -11,3 +11,4 @@ data/
 cache/
 crashdumps/
 resources-example
+build/

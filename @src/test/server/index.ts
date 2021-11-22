@@ -8,5 +8,5 @@ function handlePlayerConnect(player: alt.Player) {
 
     player.model = 'mp_m_freemode_01';
     player.spawn(36.19486618041992, 859.3850708007812, 197.71343994140625, 0);
-    alt.emitClient(player, 'log:Console', 'TypeScript Boilerplate iniciado');
+    alt.emitClient(player, 'log:Console', 'TypeScript Boilerplate iniciado v2');
 }

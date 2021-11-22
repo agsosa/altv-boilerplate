@@ -1,2 +1,3 @@
 # altv-boilerplate
- Stuyk's TS altv server boilerplate
+
+TS altv server boilerplate

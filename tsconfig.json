@@ -13,10 +13,10 @@
         "module": "esNext",
         "target": "esNext",
         "outDir": "./resources",
-        "rootDir": "./src",
+        "rootDir": "./@src",
         "allowSyntheticDefaultImports": true,
         "declaration": false
     },
-    "include": ["./src/**/*.ts"],
+    "include": ["./@src/**/*.ts"],
     "exclude": ["node_modules", "**/*.spec.ts", "resources", "**/*.json"]
 }
